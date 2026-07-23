@@ -19,7 +19,7 @@ export function About() {
     window.open(profile.contact.resume, "_blank", "noopener,noreferrer");
     const link = document.createElement("a");
     link.href = profile.contact.resume;
-    link.download = "Kaif_resume.pdf";
+    link.download = "Rayan_resume.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -55,7 +55,7 @@ export function About() {
                                     {profile.avatar ? (
                                         <img
                                             src={profile.avatar}
-                                            alt="Kaif Shaikh - Full Stack Developer Profile Photo"
+                                            alt="Rayan Ahmad - Full Stack Developer Profile Photo"
                                             className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                                         />
                                     ) : (
@@ -105,7 +105,7 @@ export function About() {
                             className="font-incognito mb-4 text-3xl leading-tight font-semibold md:text-4xl lg:text-6xl"
                         >
                             <span className="text-foreground">Hey, I&apos;m </span>
-                            <span className="relative text-[#8cc2ff] italic">Kaif Shaikh</span>
+                            <span className="relative text-[#8cc2ff] italic">Rayan Ahmad</span>
                             <span className="sr-only">
                                 {" "}
                                 - Full Stack React and Node.js Developer
@@ -141,13 +141,12 @@ export function About() {
                             viewport={{ once: true }}
                             className="text-foreground/60 max-w-2xl text-sm font-light md:text-base mb-6"
                         >
-                            I'm a Full Stack Developer with 1+ year of professional experience
-                            specializing in React.js, Next.js, Node.js, Express.js, Golang, MySQL,
+                            I'm a Full Stack Developer with 6 months of professional experience
+                            specializing in React.js, Next.js, Node.js, Express.js, MySQL,
                             PostgreSQL, Redis, Docker, and AWS. I've built enterprise-grade products
-                            including a Learning Management System (LMS), a Third-Party Risk
-                            Management (TPRM) platform, and a Phishing Security Awareness platform.
+                            including a Task Management System, Expense-Tracker App, AI Resume Analyser.
                             My expertise includes developing scalable REST APIs, implementing secure
-                            authentication with JWT, OAuth 2.0, RBAC, and Azure AD SSO, optimizing
+                            authentication with JWT, OAuth 2.0, optimizing
                             application performance using Redis, and deploying cloud-native
                             applications on AWS. I enjoy building secure, high-performance software
                             that delivers real business impact.

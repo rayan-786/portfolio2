@@ -68,7 +68,7 @@ export function AboutDetails() {
                                         {profile.avatar ? (
                                             <img
                                                 src={profile.avatar}
-                                                alt="Kaif Shaikh - Full Stack Web Developer Desktop Setup"
+                                                alt="Rayan Ahmad - Full Stack Web Developer Desktop Setup"
                                                 loading="lazy"
                                                 className="w-full h-full object-cover rounded-md"
                                             />
@@ -82,7 +82,7 @@ export function AboutDetails() {
                                         {profile.name}
                                     </h3>
                                     <p className="text-foreground/60 mt-1 font-mono text-sm">
-                                        @Kaif752
+                                        @rayan-786
                                     </p>
 
                                     {/* Status badges */}
@@ -95,13 +95,13 @@ export function AboutDetails() {
                                             Full-Stack
                                         </span>
                                         <span className="border border-border px-2.5 py-1 rounded-full text-xs font-medium text-foreground/70">
-                                            1+ Years
+                                            6months
                                         </span>
                                     </div>
 
                                     {/* Skills tags */}
                                     <div className="mt-4 flex flex-wrap justify-center gap-2">
-                                        {["React", "node", "Golang", "Express", "PostgreSQL", "MongoDB", "Java", "Spring Boot", "Next.js", "TypeScript", "UI/UX"].map((tag) => (
+                                        {["React", "node", "Express", "PostgreSQL", "MongoDB", "Next.js", "TypeScript", "Docker","AWS","UI/UX"].map((tag) => (
                                             <span
                                                 key={tag}
                                                 className="px-3 py-1 text-xs font-mono bg-muted/30 border border-border rounded-md text-foreground/70"

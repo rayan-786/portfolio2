@@ -4,6 +4,7 @@ import localFont from "next/font/local";
 import "../styles/globals.css";
 import { Providers } from "@/components/providers";
 import { MotionConfig } from "@/components/motion-config";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 const geistSans = Geist({
     variable: "--font-geist-sans",
@@ -39,12 +40,12 @@ const incognito = localFont({
 });
 
 export const metadata: Metadata = {
-    title: "Kaif Shaikh | Full Stack React & Node.js Developer Portfolio",
+    title: "Rayan Ahmad's Portfolio",
     description:
-        "Portfolio of Kaif Shaikh, a passionate Full Stack Developer specializing in React, Next.js, Node.js. Explore my real-world projects, hackathon wins, and technical achievements.",
+        "Portfolio of Rayan Ahmad, a passionate Full Stack Developer specializing in React, Next.js, Node.js. Explore my real-world projects, hackathon wins, and technical achievements.",
     keywords: [
-        "Kaif Shaikh",
-        "Kaif ",
+        "Rayan Ahmad",
+        "Rayan ",
         "Full Stack Developer",
         "React Developer",
         "Next.js",
@@ -52,23 +53,22 @@ export const metadata: Metadata = {
         "Web Development",
         "Frontend Developer",
         "Node.js Developer",
-        "PHP And Golang Developer",
         "AWS DevOps",
     ],
-    authors: [{ name: "Kaif Shaikh", url: "https://github.com/Kaif752" }],
+    authors: [{ name: "Rayan Ahmad", url: "https://github.com/rayan-786" }],
     openGraph: {
-        title: "Kaif Shaikh | Full Stack React & Node.js Developer Portfolio",
+        title: "Rayan Ahmad | Full Stack React & Node.js Developer Portfolio",
         description:
-            "Explore the portfolio of Kaif Shaikh, showcasing real-world React projects, hackathon wins, and web development achievements.",
+            "Explore the portfolio of Rayan Ahmad, showcasing real-world React projects, hackathon wins, and web development achievements.",
         type: "website",
         locale: "en_US",
-        siteName: "Kaif Shaikh Portfolio",
+        siteName: "Rayan Ahmad Portfolio",
     },
     twitter: {
         card: "summary_large_image",
-        title: "Kaif Shaikh | Full Stack Developer",
+        title: "Rayan Ahmad| Full Stack Developer",
         description:
-            "Portfolio of Kaif Shaikh, showcasing full-stack applications, problem-solving skills, and web development achievements.",
+            "Portfolio of Rayan Ahmad, showcasing full-stack applications, problem-solving skills, and web development achievements.",
     },
     robots: {
         index: true,
@@ -95,6 +95,8 @@ export default function RootLayout({
             >
                 <Providers>
                     <MotionConfig>{children}</MotionConfig>
+
+                    <WhatsAppButton />
                 </Providers>
             </body>
         </html>

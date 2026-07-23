@@ -1,19 +1,19 @@
 export const profile = {
-    name: "Kaif Shaikh",
-    displayName: "Kaif",
+    name: "Rayan Ahmad",
+    displayName: "Rayan",
     role: "Full Stack Developer",
     tagline: "Doing little is essential to doing everything else! \u2728 \uD83E\uDD84",
     location: "Mumbai, India",
-    avatar: "/image.png",
-    email: "kaifs.dev@gmail.com",
+    avatar: "/image.jpeg",
+    email: "rayanahmad7800@gmail.com",
 
     intro: [
-        "Hey, I'm Kaif — a Full Stack Developer building modern, scalable web applications.",
+        "Hey, I'm Rayan — a Full Stack Developer building modern, scalable web applications.",
         // "I enjoy solving real-world problems through clean code, thoughtful design, and efficient backend systems.",
         // "Passionate about continuous learning, I love transforming ideas into fast, reliable, and production-ready solutions."
     ],
 
-    about: "I'm a Full Stack Developer with 1+ year of professional experience specializing in React.js, Next.js, Node.js, Express.js, Golang, MySQL, PostgreSQL, Redis, Docker, and AWS. I've built enterprise-grade products including a Learning Management System (LMS), a Third-Party Risk Management (TPRM) platform, and a Phishing Security Awareness platform. My expertise includes developing scalable REST APIs, implementing secure authentication with JWT, OAuth 2.0, RBAC, and Azure AD SSO, optimizing application performance using Redis, and deploying cloud-native applications on AWS. I enjoy building secure, high-performance software that delivers real business impact.",
+    about: "I'm a Full Stack Developer with 6months+ year of professional experience specializing in React.js, Next.js, Node.js, Express.js, MySQL, PostgreSQL, Redis, Docker, and AWS. I've built Task Management System, Expense-Tracker, AI Resume Analyzer. My expertise includes developing scalable REST APIs, implementing secure authentication with JWT, OAuth 2.0, and  optimizing application performance using Redis, and deploying cloud-native applications on AWS. I enjoy building secure, high-performance software that delivers real business impact.",
 
     personality: [
         "Creative and artistic mindset",
@@ -40,7 +40,7 @@ export const profile = {
         },
         {
             category: "Backend",
-            items: ["Golang", "Node.js", "Express", "REST APIs", "MongoDB", "MySQL", "PostgreSQL"],
+            items: [ "Node.js", "Express", "REST APIs", "MongoDB", "MySQL", "PostgreSQL"],
         },
         {
             category: "Tools & Platforms",
@@ -48,7 +48,7 @@ export const profile = {
         },
         {
             category: "Currently Learning",
-            items: ["C++", "Three.js", "TypeScript Advanced"],
+            items: ["Linux", "Three.js", "TypeScript Advanced"],
         },
     ],
 
@@ -137,91 +137,6 @@ export const profile = {
 
     projects: [
         {
-            title: "SafeClick (Phishing Simulation Platform)",
-            description:
-                "Developed a scalable multi-tenant phishing simulation platform that enables organizations to run phishing campaigns, deliver security awareness training, monitor user performance, and generate detailed reports.",
-            tech: [
-                "Golang",
-                "JavaScript",
-                "CSS",
-                "HTML",
-                "Bootstrap",
-                "JQuery",
-                "MySQL",
-                "Docker",
-                "AWS",
-            ],
-            live: "https:live.safeclick.tech",
-            github: null,
-            images: ["/projects/safeclick.png", "projects/safeclick2.png", "/projects/safeclick3.png", "/projects/safeclick4.png", "/projects/safeclick5.png", "/projects/safeclick6.png"],
-            category: "Full Stack",
-        },
-        {
-            title: "Learning Management System (LMS)",
-            description:
-                "Developed a scalable multi-tenant Learning Management System (LMS) that enables organizations to manage courses, quizzes, training campaigns, certificates, and learner progress through a secure and user-friendly platform.",
-            tech: [
-                "Node",
-                "Express",
-                "React",
-                "Redis",
-                "TailwindCSS",
-                "MySQL",
-                "Docker",
-                "SOO",
-                "JWT",
-                "AWS",
-            ],
-            live: "https://lms.safeclick.tech",
-            github: null,
-            images: ["/safeclick1.png", "projects/lms1.png", "/projects/lms2.jpg", "/projects/lms3.png", "/projects/lms4.png", "/projects/lms5.png"],
-            category: "Full Stack",
-        },
-        {
-            title: "Third-Party Risk Management (TPRM)",
-            description:
-                "Built a scalable multi-tenant Third-Party Risk Management (TPRM) platform with dedicated Vendor Onboarding, Vendor, Risk Analyst, and Admin/CISO portals for managing vendor risk assessments, compliance, and security workflows.",
-            tech: [
-                "Golang",
-                "Node",
-                "Express",
-                "React",
-                "Redis",
-                "TailwindCSS",
-                "Postgres",
-                "Docker",
-                "SOO",
-                "JWT",
-                "AWS",
-            ],
-            live: "https://tprm.safeclick.tech",
-            github: null,
-            images: ["/projects/studyflow.png"],
-            category: "Full Stack",
-        },
-        {
-            title: "Dudedice Collection",
-            description:
-                "Developed a modern eCommerce platform with dedicated customer and admin panels for managing products, orders, users, and secure online purchases.",
-            tech: [
-                "Node",
-                "Express",
-                "React",
-                "MongoDB",
-                "Razorpay",
-                "TailwindCSS",
-                "JWT",
-                "Cloudinary",
-                "Redis",
-                "redux-toolkit",
-            ],
-            live: "https://dudedice.com",
-            github: null,
-            category: "Full Stack",
-            images: ["/projects/dude1.png", "/projects/dude2.png", "/projects/dude3.png", "/projects/dude4.png", "/projects/dude5.png"],
-        },
-
-         {
             title: "Expense Tracker Platform",
             description:
                 "Developed a secure Expense Tracker application to record income, expenses, and manage monthly budgets efficiently. Implemented user authentication, transaction management, expense categorization, and financial insights using the MERN stack.",
@@ -232,23 +147,95 @@ export const profile = {
                 "MySQL",
                 "TailwindCSS",
                 "JWT",
+                "0Auth(SSO)",
                 "Cloudinary",
                 "Redis",
                 "pdf-kit",
                 "Migration",
             ],
-            live: "https://expense-tracker-ruby-xi-85.vercel.app",
-            github: null,
+            live: "https://expense-tracker786.vercel.app",
+            github: "https://github.com/rayan-786/Expense-Tracker",
             category: "Full Stack",
             images: ["/projects/ex1.png", "/projects/ex2.png", "/projects/ex3.png", "/projects/ex4.png", "/projects/ex5.png", "/projects/ex6.png"],
         },
+        {
+            title: "Task Management System",
+            description:
+                "Built a full-stack Task Management System with JWT-based authentication, SSO(github), REST API integration, and MongoDB database management. Designed a responsive interface for seamless task tracking and productivity management.",
+            tech: [
+                "React",
+                "Node.js",
+                "Express",
+                "JWT and SSO",
+                "MongoDB",
+                "Docker",
+                "AWS",
+            ],
+            live: "https://rayan-auth.vercel.app",
+            github: "https://github.com/rayan-786/task-management",
+            images: ["/projects/task-3.png", "projects/task-1.png", "/projects/task-2.png", "/projects/task-5.png", "/projects/task-4.png",],
+            category: "Full Stack",
+        },
+        {
+            title: "AI Resume Analyser",
+            description:
+                "Created an AI-powered web application using Google AI Studio and Gemini API, enabling users to interact with advanced generative AI capabilities. Focused on API integration, prompt engineering, performance optimization, and responsive design to deliver accurate and engaging AI-driven experiences.",
+            tech: [
+                "Node",
+                "Express",
+                "Next",
+                "TailwindCSS",
+                "AWS",
+                "TypeScript",
+                "Gemini"
+            ],
+            live: "https://resumetest.duckdns.org",
+            github: "https://github.com/rayan-786/resume.ai",
+            images: ["projects/rs-1.png", "projects/rs-2.png", "/projects/rs-3.jpg", "/projects/rs-4.png",],
+            category: "Front-End",
+        },
+        {
+            title: "Developer Portfolio Website",
+            description:
+                "Personal portfolio website showcasing my Full Stack Development projects, technical skills, and experience. Built with modern web technologies and designed for a responsive user experience.",
+            tech: [
+                "React",
+                "Node",
+                "Express",
+                "TailwindCSS",
+                "MongoDB",
+                "OpenAI",
+                "AWS",
+            ],
+            live: "https://legendrayan.duckdns.org",
+            github: "https://github.com/rayan-786/portfolio",
+            images: ["projects/pf1.png", "projects/pf2.png", "projects/pf3.png", "projects/pf4.png"],
+            category: "Full Stack",
+        },
+        {
+            title: "GitHub Profile Finder App",
+            description:
+                "Created a GitHub Finder application that enables users to search and explore GitHub profiles, repositories, and contribution details using GitHub APIs. Focused on API integration, responsive design, and user-friendly navigation.",
+            tech: [
+                "GithubAPIs",
+                "TailwindCSS",
+                "React",
+                "API Integration"
+            ],
+            live: "https://legendrayan.duckdns.org/github",
+            github:"https://github.com/rayan-786/portfolio",
+            category: "Full Stack",
+            images: ["projects/gf1.png", "projects/gf2.png"],
+        },
+
+         
     ],
 
     contact: {
-        email: "kaifs.dev@gmail.com",
-        github: "https://github.com/kaif752",
-        linkedin: "https://www.linkedin.com/in/Kaif -bajaniya-26b523378/",
-        resume: "/projects/Kaif_Resume.pdf",
-        twitter: "https://x.com/Kaif752",
+        email: "rayanahmad7800@gmail.com",
+        github: "https://github.com/rayan-786",
+        linkedin: "https://www.linkedin.com/in/rayan-ahmad786",
+        resume: "/projects/Rayan_resume.pdf",
+        twitter: "https://x.com/RayanAn76054059",
     },
 };

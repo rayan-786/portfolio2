@@ -41,7 +41,7 @@ export function Logo({
             transition={{ duration, ease: "easeOut" }}
             onAnimationComplete={onAnimationEnd}
         >
-            Kaif S
+            Rayan A
         </motion.span>
     );
 

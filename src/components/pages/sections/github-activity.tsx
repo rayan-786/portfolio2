@@ -102,12 +102,9 @@ export function GithubActivity() {
                             <ActivityIcon className="h-10 w-10 text-foreground/40 mb-4" />
                             <h3 className="text-xl font-bold mb-2">Top Languages</h3>
                             <p className="text-sm text-foreground/60 mb-6 max-w-sm">
-                                Python, JavaScript, React, Tailwind CSS, C/C++
+                                Python, JavaScript, React, Tailwind CSS
                             </p>
                             <div className="flex flex-wrap justify-center gap-2">
-                                <span className="rounded bg-blue-500/10 px-3 py-1 text-[10px] font-mono text-blue-400 border border-blue-500/20">
-                                    Golang
-                                </span>
                                 <span className="rounded bg-yellow-500/10 px-3 py-1 text-[10px] font-mono text-yellow-400 border border-yellow-500/20">
                                     JavaScript
                                 </span>
@@ -123,12 +120,6 @@ export function GithubActivity() {
                                 <span className="rounded bg-green-500/10 px-3 py-1 text-[10px] font-mono text-green-400 border border-green-500/20">
                                     MongoDB
                                 </span>
-                                <span className="rounded bg-blue-500/10 px-3 py-1 text-[10px] font-mono text-blue-400 border border-blue-500/20">
-                                    Java
-                                    </span>
-                                <span className="rounded bg-blue-500/10 px-3 py-1 text-[10px] font-mono text-blue-400 border border-blue-500/20">
-                                    Spring Boot
-                                    </span>
                                 <span className="rounded bg-blue-500/10 px-3 py-1 text-[10px] font-mono text-blue-400 border border-blue-500/20">
                                     Next.js
                                 </span>
@@ -148,7 +139,7 @@ export function GithubActivity() {
                             {/* We use rshah's ghchart. Replace 'Kaif752' with username. Using 3b82f6 for a nice blue theme to match screenshot */}
                             <img
                                 src={`https://ghchart.rshah.org/3b82f6/${profile.contact.github.split("/").pop()}`}
-                                alt="Kaif Shaikh GitHub Contributions and Coding Activity Graph"
+                                alt="Rayan Ahmad GitHub Contributions and Coding Activity Graph"
                                 className="w-full h-auto opacity-70 contrast-150 grayscale invert max-md:hidden"
                                 loading="lazy"
                             />

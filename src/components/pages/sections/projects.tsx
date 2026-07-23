@@ -146,7 +146,7 @@ export function Projects() {
                                                                       ]
                                                                     : project.images
                                                             }
-                                                            alt={`${project.title} - Project by Kaif Shaikh`}
+                                                            alt={`${project.title} - Project by Rayan Ahmad`}
                                                             loading="lazy"
                                                             draggable={false}
                                                             className="

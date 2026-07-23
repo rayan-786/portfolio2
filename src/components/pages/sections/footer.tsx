@@ -1,7 +1,7 @@
 "use client";
 
 import { Logo } from "@/components/ui/logo";
-import { Github, Heart, Linkedin, Mail, Youtube } from "lucide-react";
+import { Github, Heart, Linkedin, Mail, } from "lucide-react";
 import { motion } from "motion/react";
 import { profile } from "@/data/profile";
 
@@ -17,11 +17,6 @@ export function Footer() {
             href: profile.contact.linkedin,
             label: "LinkedIn",
         },
-        // {
-        //     icon: Youtube,
-        //     href: profile.contact.youtube,
-        //     label: "YouTube",
-        // },
         {
             icon: Mail,
             href: `mailto:${profile.contact.email}`,
@@ -34,19 +29,8 @@ export function Footer() {
             <div className="text-foreground/70 flex flex-col items-center justify-between gap-3 text-sm md:flex-row">
                 <div className="inline-flex items-center gap-2">
                     <Logo className="text-[36px] leading-none" />
-                    <span>© 2026 Kaif . All rights reserved.</span>
+                    <span>© 2026 Rayan . All rights reserved.</span>
                 </div>
-
-                {/* <motion.div
-                    initial={{ opacity: 0, y: 10 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    className="flex items-center gap-2"
-                >
-                    <span className="text-foreground/60 text-sm">Made with</span>
-                    <Heart className="h-4 w-4 fill-red-400 text-red-400" />
-                    <span className="text-foreground/60 text-sm">in Next.js</span>
-                </motion.div> */}
 
                 <div className="inline-flex items-center gap-4">
                     {/* Social Links */}
@@ -64,15 +48,6 @@ export function Footer() {
                             </a>
                         ))}
                     </div>
-
-                    {/* <motion.a
-                        href="#home"
-                        whileHover={{ y: -2 }}
-                        whileTap={{ scale: 0.95 }}
-                        className="hover:bg-foreground/5 rounded-md border px-2 py-1 transition-all text-sm"
-                    >
-                        Back to top
-                    </motion.a> */}
                 </div>
             </div>
         </footer>

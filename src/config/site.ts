@@ -9,5 +9,5 @@ export const siteConfig = {
     linkedin: profile.contact.linkedin,
     github: profile.contact.github,
     email: profile.contact.email,
-    telegram: "https://t.me/Kaif Bajaniya", // Placeholder or from profile if added later
+ // Placeholder or from profile if added later
 };
