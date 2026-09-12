@@ -125,6 +125,8 @@ export function About() {
                                     "Full-Stack Developer",
                                     "Frontend Developer",
                                     "Backend Developer",
+                                    "DevOps Enthusiast",
+                                    "Linux User",
                                     "Problem Solver",
                                 ]}
                                 typingSpeed={80}
@@ -152,6 +154,22 @@ export function About() {
                             that delivers real business impact.
                         </motion.p>
 
+                        {/* Technical Identity Line */}
+                        <motion.div
+                            initial={{ opacity: 0 }}
+                            whileInView={{ opacity: 1 }}
+                            transition={{ duration: 0.6, delay: 0.35 }}
+                            viewport={{ once: true }}
+                            className="mb-4 flex flex-wrap items-center gap-2 font-mono text-[10px] tracking-widest uppercase text-foreground/30 max-md:justify-center"
+                        >
+                            {["Linux", "DevOps", "Cloud", "Automation", "Full-Stack"].map((item, i) => (
+                                <span key={item} className="flex items-center gap-2">
+                                    {i > 0 && <span className="text-foreground/15">·</span>}
+                                    {item}
+                                </span>
+                            ))}
+                        </motion.div>
+
                         <HeadingLine className="mb-6" lineWidth={40} />
 
                         {/* CTA Buttons */}
@@ -176,6 +194,24 @@ export function About() {
                                 <Download className="size-4 transition-transform group-hover/btn:translate-y-0.5" />
                                 View Resume
                             </button>
+                        </motion.div>
+
+                        {/* Terminal Micro-Interaction */}
+                        <motion.div
+                            initial={{ opacity: 0, y: 10 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.6, delay: 0.5 }}
+                            viewport={{ once: true }}
+                            className="mt-6 max-w-[240px] rounded-lg border border-border/60 bg-card/20 px-4 py-3 font-mono text-xs backdrop-blur-sm max-md:mx-auto"
+                        >
+                            <div className="text-foreground/40">
+                                <span className="text-emerald-500/70">$</span> whoami
+                            </div>
+                            <div className="text-foreground/60 ml-3">rayan — full-stack developer</div>
+                            <div className="mt-1 text-foreground/40">
+                                <span className="text-emerald-500/70">$</span> uptime
+                            </div>
+                            <div className="text-foreground/60 ml-3">building reliable software</div>
                         </motion.div>
                     </div>
                 </motion.div>

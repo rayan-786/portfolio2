@@ -15,7 +15,7 @@ export function AboutDetails() {
                     <h2 className="font-incognito text-2xl font-semibold md:text-5xl lg:text-4xl">
                         Meet the Developer,
                         <br />
-                        Behind the Code
+                        Behind the Code &amp; Infrastructure
                     </h2>
 
                     <HeadingLine className="mt-6" lineWidth={40} />
@@ -101,7 +101,7 @@ export function AboutDetails() {
 
                                     {/* Skills tags */}
                                     <div className="mt-4 flex flex-wrap justify-center gap-2">
-                                        {["React", "node", "Express", "PostgreSQL", "MongoDB", "Next.js", "TypeScript", "Docker","AWS","UI/UX"].map((tag) => (
+                                        {["React", "Node.js", "Express", "PostgreSQL", "MongoDB", "Next.js", "TypeScript", "Docker", "AWS", "Linux", "Git"].map((tag) => (
                                             <span
                                                 key={tag}
                                                 className="px-3 py-1 text-xs font-mono bg-muted/30 border border-border rounded-md text-foreground/70"

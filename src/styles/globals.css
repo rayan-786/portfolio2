@@ -339,3 +339,50 @@
 .terminal-cursor {
     animation: blink 1s infinite;
 }
+
+/* Reduce/disable non-essential animations for users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+
+    .terminal-cursor {
+        animation: none;
+        opacity: 1;
+    }
+}
+
+/* Interactive terminal input styling */
+@utility terminal-input {
+    background: transparent;
+    border: none;
+    outline: none;
+    caret-color: theme(--color-foreground);
+    font-family: var(--font-geist-mono);
+    color: theme(--color-foreground);
+}
+
+/* Pipeline node connector line */
+@utility pipeline-line {
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(139, 92, 246, 0.3),
+        transparent
+    );
+    height: 1px;
+}
+
+@utility pipeline-line-vertical {
+    background: linear-gradient(
+        180deg,
+        transparent,
+        rgba(139, 92, 246, 0.3),
+        transparent
+    );
+    width: 1px;
+}

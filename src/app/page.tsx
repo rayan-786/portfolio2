@@ -8,6 +8,7 @@ import { Skills } from "@/components/pages/sections/skills";
 import { GithubActivity } from "@/components/pages/sections/github-activity";
 // import { LeetcodeStats } from "@/components/pages/sections/leetcode-stats";
 import { AboutDetails } from "@/components/pages/sections/about-details";
+import { InteractiveTerminal } from "@/components/pages/sections/interactive-terminal";
 import { Contact } from "@/components/pages/sections/contact";
 import { Footer } from "@/components/pages/sections/footer";
 import { BackgroundNoise } from "@/components/shared/backgrounds";
@@ -50,6 +51,9 @@ export default function Home() {
 
                                 {/* LeetCode Stats */}
                                 {/* <LeetcodeStats /> */}
+
+                                {/* Interactive Terminal */}
+                                <InteractiveTerminal />
 
                                 {/* About Details */}
                                 <AboutDetails />

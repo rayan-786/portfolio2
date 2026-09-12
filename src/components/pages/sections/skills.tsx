@@ -2,6 +2,7 @@
 
 import { motion } from "motion/react";
 import SectionHeading from "@/components/section-heading";
+import { DevOpsPipeline } from "@/components/pages/sections/devops-pipeline";
 
 const CodeIcon = (props: React.SVGProps<SVGSVGElement>) => (
     <svg
@@ -53,7 +54,12 @@ const ToolIcon = (props: React.SVGProps<SVGSVGElement>) => (
         strokeLinejoin="round"
         {...props}
     >
-        <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+        <rect width="20" height="14" x="2" y="3" rx="2"></rect>
+        <line x1="2" x2="22" y1="20" y2="20"></line>
+        <line x1="7" x2="7" y1="17" y2="20"></line>
+        <line x1="17" x2="17" y1="17" y2="20"></line>
+        <polyline points="8 9 6 12 8 15"></polyline>
+        <polyline points="16 9 18 12 16 15"></polyline>
     </svg>
 );
 
@@ -109,28 +115,28 @@ const skillCategories = [
             "JWT",
             "MongoDB",
             "MySQL",
-            "PostgresSQL",
+            "PostgreSQL",
         ],
     },
     {
         number: "03",
         icon: ToolIcon,
-        label: "Dev Environment",
-        title: "Tools",
-        items: ["Git", "GitHub", "GitLab", "Postman", "Visual Studio", "VS Code", "Docker", "AWS"],
+        label: "DevOps & Infrastructure",
+        title: "DevOps",
+        items: ["Git", "GitHub", "Docker", "AWS", "Linux", "CI/CD", "Nginx", "Shell Scripting"],
     },
     {
         number: "04",
         icon: SparkleIcon,
-        label: "Currently Learning",
+        label: "Currently Exploring",
         title: "Exploring",
         items: [
-            "Linux",
-            "CI/CD",
-            "Three.js",
-            "Microservices",
             "Kubernetes",
+            "Microservices",
+            "Three.js",
             "OAuth2",
+            "Redis",
+            "GitLab",
         ],
     },
 ];
@@ -242,6 +248,9 @@ export function Skills() {
                         );
                     })}
                 </div>
+
+                {/* CI/CD Pipeline Visualization */}
+                <DevOpsPipeline />
 
                 {/* Footer stats row */}
                 <motion.div

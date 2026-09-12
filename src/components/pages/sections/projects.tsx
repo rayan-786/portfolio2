@@ -255,7 +255,7 @@ export function Projects() {
                                 </p>
 
                                 {/* Tags */}
-                                <div className="mb-8 flex flex-wrap gap-2">
+                                <div className="mb-4 flex flex-wrap gap-2">
                                     {project.tech.map((tag) => (
                                         <span
                                             key={tag}
@@ -268,6 +268,38 @@ export function Projects() {
                                             {tag}
                                         </span>
                                     ))}
+                                </div>
+
+                                {/* Infrastructure Metadata */}
+                                {(() => {
+                                    const infraTech = project.tech.filter((t) =>
+                                        ["Docker", "AWS", "Nginx", "Redis"].includes(t)
+                                    );
+                                    const isVercel = project.live?.includes("vercel.app");
+                                    return (
+                                        (infraTech.length > 0 || isVercel) && (
+                                            <div className="mb-6 flex flex-wrap items-center gap-3 font-mono text-[10px] tracking-wider uppercase text-foreground/35">
+                                                {infraTech.length > 0 && (
+                                                    <span>
+                                                        INFRA: {infraTech.join(" · ")}
+                                                    </span>
+                                                )}
+                                                {isVercel && (
+                                                    <>
+                                                        {infraTech.length > 0 && <span className="text-foreground/15">|</span>}
+                                                        <span>DEPLOY: Vercel</span>
+                                                    </>
+                                                )}
+                                            </div>
+                                        )
+                                    );
+                                })()}
+
+                                {/* Terminal-style hover path */}
+                                <div className="mb-6 overflow-hidden">
+                                    <div className="translate-y-full opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100 font-mono text-[10px] text-foreground/25">
+                                        $ cd ~/projects/{project.title.toLowerCase().replace(/\s+/g, "-")}
+                                    </div>
                                 </div>
 
                                 {/* Buttons */}

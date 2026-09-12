@@ -190,11 +190,14 @@ export function Contact() {
 
                             <div className="border-b border-border p-6 lg:border-b-0 lg:border-r">
                                 <div className="mb-8">
-                                    <h3 className="text-2xl font-semibold">Let's Work Together</h3>
+                                    <p className="mb-3 font-mono text-[10px] tracking-widest uppercase text-foreground/25">
+                                        $ echo &quot;Let&apos;s build something together.&quot;
+                                    </p>
+                                    <h3 className="text-2xl font-semibold">Let&apos;s Work Together</h3>
 
                                     <p className="mt-2 text-sm text-foreground/60">
                                         Have a project, job opportunity or idea? Fill out the form
-                                        and I'll get back to you within 24 hours.
+                                        and I&apos;ll get back to you within 24 hours.
                                     </p>
                                 </div>
 

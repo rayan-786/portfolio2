@@ -17,6 +17,7 @@ const NAV_LINKS = [
     // { id: "certifications", label: "Certifications" },
     { id: "github", label: "GitHub" },
     // { id: "leetcode", label: "LeetCode" },
+    { id: "terminal", label: "Terminal" },
     { id: "contact", label: "Contact" },
 ] as const;
 

@@ -4,6 +4,7 @@ import { Logo } from "@/components/ui/logo";
 import { Github, Heart, Linkedin, Mail, } from "lucide-react";
 import { motion } from "motion/react";
 import { profile } from "@/data/profile";
+import { SystemStatus } from "@/components/ui/system-status";
 
 export function Footer() {
     const socialLinks = [
@@ -29,7 +30,12 @@ export function Footer() {
             <div className="text-foreground/70 flex flex-col items-center justify-between gap-3 text-sm md:flex-row">
                 <div className="inline-flex items-center gap-2">
                     <Logo className="text-[36px] leading-none" />
-                    <span>© 2026 Rayan . All rights reserved.</span>
+                    <span>&copy; 2026 Rayan . All rights reserved.</span>
+                </div>
+
+                {/* System Status */}
+                <div className="hidden md:block">
+                    <SystemStatus />
                 </div>
 
                 <div className="inline-flex items-center gap-4">
@@ -53,3 +59,4 @@ export function Footer() {
         </footer>
     );
 }
+
